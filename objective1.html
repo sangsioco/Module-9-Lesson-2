@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Solutions - Services</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+        /* task1: services section style */
+        .service-card {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .service-icon {
+            font-size: 3rem;
+            color: #007bff;
+        }
+
+        /* task2: contact form style*/
+        .contact-form {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+     <!-- task1: services section -->
+    <section id="services" class="container py-5">
+        <h2 class="text-center mb-5">Tech Solution Services</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-laptop"></i>
+                    </div>
+                    <h3 class="mt-3">Cybersecurity</h3>
+                    <p>We thoroughly assess your network and systems to ensure they are secure and protected against cyber attacks.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-person-square"></i>
+                    </div>
+                    <h3 class="mt-3">IT Consult</h3>
+                    <p>Comprehensive IT consulting services, specializing in network and system security.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-device-hdd"></i>
+                    </div>
+                    <h3 class="mt-3">Backup and Disaster Recovery</h3>
+                    <p>Reliable backup and disaster recovery solutions to safeguard your critical data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- task2: contact us section -->
+    <section id="contact" class="container py-5">        
+        <h2 class="text-center mb-5">Contact Us</h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="contact-form">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="service" class="form-label">Service</label>
+                            <select class="form-select" id="service" required>
+                                <option value="" disabled selected>Select a Service</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="graphic-design">Graphic Design</option>
+                                <option value="seo">SEO Optimization</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+</body>
+</html>
